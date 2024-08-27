@@ -1,0 +1,15 @@
+{
+	"scripts": {
+		"dev:http": "nuxi dev --dotenv .env.http --host",
+		"dev:https": "nuxi dev --dotenv .env.https --host"
+	},
+	"dependencies": {
+		"@pinia/nuxt": "^0.5.4",
+		"nuxt": "^3.13.0"
+	},
+	"devDependencies": {
+		"@types/node": "^22.5.0",
+		"typescript": "^5.5.4",
+		"vite-plugin-mkcert": "^1.17.6"
+	}
+}

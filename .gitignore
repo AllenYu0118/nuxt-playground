@@ -1,0 +1,14 @@
+node_modules
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist
+auto-imports.d.ts
+components.d.ts
+.idea
+
+# macOS generated files
+.DS_Store

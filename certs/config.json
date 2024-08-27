@@ -1,0 +1,19 @@
+{
+  "record": {
+    "hosts": [
+      "localhost",
+      "127.0.0.1",
+      "192.168.2.188",
+      "192.168.2.20",
+      "house-rent.dev.591.com.tw",
+      "house-sale.dev.591.com.tw",
+      "house-business.dev.591.com.tw",
+      "land.dev.591.com.tw"
+    ],
+    "hash": {
+      "key": "feabf2554c55f7655fe9fd36228d4a2f69209487713747fbba55dbe7c111c516",
+      "cert": "395da19f5c887194f946531a50c1f88086f16cf70b12a1b4d65bbbaf7e13c3f8"
+    }
+  },
+  "configFilePath": "/Users/allenyu/Github/nuxt-playground/certs/config.json"
+}
