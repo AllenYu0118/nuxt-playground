@@ -5,5 +5,5 @@
 </template>
 
 <script setup lang="ts">
-useRentListStore()
+// useRentListStore()
 </script>

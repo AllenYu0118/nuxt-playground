@@ -39,8 +39,8 @@ export default defineNuxtConfig({
     plugins: [
       mkcert({
         hosts: ['house-rent.dev.591.com.tw', 'house-sale.dev.591.com.tw', 'house-business.dev.591.com.tw', 'land.dev.591.com.tw', 'localhost', '127.0.0.1'],
-        savePath: './certs', // save the generated certificate into certs directory
-        force: true, // force generation of certs even without setting https property in the vite config
+        // savePath: './certs', // save the generated certificate into certs directory
+        // force: true, // force generation of certs even without setting https property in the vite config
       }),
     ]
   },
