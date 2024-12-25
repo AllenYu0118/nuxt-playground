@@ -34,6 +34,13 @@ export default defineNuxtConfig({
       protocol,
     }
   },
+  imports: {
+    dirs: [
+      './stores/*',
+      './constants/*',
+    ],
+    injectAtEnd: true,
+  },
 
   vite: {
     plugins: [
