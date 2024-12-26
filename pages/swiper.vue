@@ -1,24 +1,35 @@
 <template>
   <h1>Swiper</h1>
 
-  <!-- <ClientOnly>
-    <swiper :modules="[Controller, Pagination, Navigation]" :navigation="true" :space-between="10" :slides-per-view="3"
-      @swiper="onSwiper" @slideChange="onSlideChange" class="swiper" :pagination="{
+  <ClientOnly>
+    <swiper 
+      :modules="[Controller, Pagination, Navigation]" 
+      :navigation="true" 
+      :space-between="10" 
+      :slides-per-view="3"
+      @swiper="onSwiper" 
+      @slideChange="onSlideChange" 
+      class="swiper" 
+      :pagination="{
         clickable: true,
         el: '.swiper-pagination',
-      }">
-      <swiper-slide v-for="(item, key) in [...bannerList, ...bannerList, ...bannerList]" class="swiper-item"
-        :data-type="item.type" :key="key">
+      }" 
+      :loop="true"
+    >
+      <swiper-slide 
+        v-for="(item, key) in bannerList" 
+        class="swiper-item"
+        :data-type="item.type" 
+        :key="key" 
+        :data-key="key"
+      >
         <img :src="item.cover_img.url" v-if="item.type === 'work'" />
         <template v-if="item.type === 'video'">
-          
+          <Player :id="`player-${Date.now()}`" />
         </template>
       </swiper-slide>
     </swiper>
-
-
-  </ClientOnly> -->
-
+  </ClientOnly>
 
   <p>
     <ClientOnly>
@@ -38,25 +49,13 @@ import 'swiper/css/pagination';
 import 'swiper/css/controller';
 import 'swiper/css/navigation';
 
-const docLoaded = ref(false)
-
 const onSwiper = (swiper: SwiperType) => {
   console.log('swiper: ', swiper);
 }
 
-
 const onSlideChange = (swiper: SwiperType) => {
-  // const videos = document.querySelectorAll('.t5-player video')
-  // videos.forEach(video => {
-  //   video.pause()
-  // })
+  console.log('swiper: ', swiper);
 }
-
-onMounted(() => {
-  nextTick(() => {
-    docLoaded.value = true
-  })
-})
 
 </script>
 
