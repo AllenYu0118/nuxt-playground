@@ -12,8 +12,8 @@ importers:
         specifier: ^0.5.4
         version: 0.5.4(magicast@0.3.5)(rollup@4.21.1)(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4))
       '@t5/player':
-        specifier: ^0.0.9
-        version: 0.0.9(aws-crt@1.24.2)(vue@3.4.38(typescript@5.5.4))
+        specifier: ^1.0.0
+        version: 1.0.0(aws-crt@1.24.2)(vue@3.4.38(typescript@5.5.4))
       nuxt:
         specifier: ^3.13.0
         version: 3.13.0(@parcel/watcher@2.4.1)(@types/node@22.5.0)(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.21.1)(terser@5.31.6)(typescript@5.5.4)(vite@5.4.2(@types/node@22.5.0)(terser@5.31.6))
@@ -1419,8 +1419,8 @@ packages:
     resolution: {integrity: sha512-4k3VDQA3YnsjXWbYdAO2CbZTflltUezhnYDJldCOfvcbsZ/Dat6CIzmBgr/J37ngoAqqW4W20V1DpsFcOcWyCg==}
     engines: {node: '>=14'}
 
-  '@t5/player@0.0.9':
-    resolution: {integrity: sha512-bi3CZbamsPCwM1ACwc6O9eXLkAMDREKHZ4KBg6dp41GxR3r5z7skHgUfvh+Klgc16drWZ2EKgEJhv7KlZW877g==}
+  '@t5/player@1.0.0':
+    resolution: {integrity: sha512-CPzM0kcjIGY5OJUBKo7506CGfUF5CtbnhVLohuWan/1LLtKnwTeAXtO/oD4yJ5kmx9dhMdXgqX7PO47AZJ09qw==}
     engines: {node: '>=16', pnpm: '>=8.4.0'}
     peerDependencies:
       '@vue/composition-api': ^1.7.0
@@ -5838,7 +5838,7 @@ snapshots:
 
   '@t5/cross-storage@0.0.12': {}
 
-  '@t5/player@0.0.9(aws-crt@1.24.2)(vue@3.4.38(typescript@5.5.4))':
+  '@t5/player@1.0.0(aws-crt@1.24.2)(vue@3.4.38(typescript@5.5.4))':
     dependencies:
       '@aws-sdk/client-s3': 3.180.0(@aws-sdk/signature-v4-crt@3.180.0)(aws-crt@1.24.2)
       '@aws-sdk/s3-request-presigner': 3.180.0(@aws-sdk/signature-v4-crt@3.180.0)
